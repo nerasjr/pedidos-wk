@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2024/08/06 12:54:36.000.702,=C:\Users\nerasjr\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/08/06 12:57:49.000.746,C:\Users\nerasjr\Documents\Embarcadero\Studio\Projects\Unit1.pas=D:\Projetos\WK\teste_delphi\undPrincipal.pas</Transaction>
+    <Transaction>2024/08/06 12:57:49.000.746,C:\Users\nerasjr\Documents\Embarcadero\Studio\Projects\Unit1.dfm=D:\Projetos\WK\teste_delphi\undPrincipal.dfm</Transaction>
+    <Transaction>2024/08/06 12:58:18.000.033,C:\Users\nerasjr\Documents\Embarcadero\Studio\Projects\Project1.dproj=D:\Projetos\WK\teste_delphi\PedidosWK_EraldoJr.dproj</Transaction>
+    <Transaction>2024/08/06 13:17:33.000.507,=D:\Projetos\WK\teste_delphi\Unit1.pas</Transaction>
+    <Transaction>2024/08/06 13:23:17.000.929,=D:\Projetos\WK\teste_delphi\Unit1.pas</Transaction>
+    <Transaction>2024/08/06 13:24:02.000.140,D:\Projetos\WK\teste_delphi\models\untClientes.pas=D:\Projetos\WK\teste_delphi\Unit1.pas</Transaction>
+    <Transaction>2024/08/06 13:24:13.000.532,=D:\Projetos\WK\teste_delphi\Unit1.pas</Transaction>
+    <Transaction>2024/08/06 13:24:32.000.248,D:\Projetos\WK\teste_delphi\models\untProdutos.pas=D:\Projetos\WK\teste_delphi\Unit1.pas</Transaction>
+    <Transaction>2024/08/06 13:24:43.000.299,=D:\Projetos\WK\teste_delphi\Unit1.pas</Transaction>
+    <Transaction>2024/08/06 13:25:03.000.246,D:\Projetos\WK\teste_delphi\models\untPedidos.pas=D:\Projetos\WK\teste_delphi\Unit1.pas</Transaction>
+    <Transaction>2024/08/06 13:25:44.000.606,=D:\Projetos\WK\teste_delphi\Unit1.pas</Transaction>
+    <Transaction>2024/08/06 13:26:29.000.912,D:\Projetos\WK\teste_delphi\dataaccess\untDataModule.pas=D:\Projetos\WK\teste_delphi\Unit1.pas</Transaction>
+    <Transaction>2024/08/06 13:26:43.000.547,=D:\Projetos\WK\teste_delphi\Unit1.pas</Transaction>
+    <Transaction>2024/08/06 13:27:27.000.413,D:\Projetos\WK\teste_delphi\controllers\untPedidosController.pas=D:\Projetos\WK\teste_delphi\Unit1.pas</Transaction>
+    <Transaction>2024/08/06 13:27:58.000.023,=D:\Projetos\WK\teste_delphi\Unit2.pas</Transaction>
+    <Transaction>2024/08/06 13:31:06.000.660,=D:\Projetos\WK\teste_delphi\Unit1.pas</Transaction>
+    <Transaction>2024/08/06 13:31:44.000.333,=D:\Projetos\WK\teste_delphi\Unit1.pas</Transaction>
+    <Transaction>2024/08/06 13:32:49.000.901,=D:\Projetos\WK\teste_delphi\Unit1.pas</Transaction>
+    <Transaction>2024/08/06 13:51:09.000.467,=D:\Projetos\WK\teste_delphi\Unit1.pas</Transaction>
+    <Transaction>2024/08/06 14:00:09.000.301,D:\Projetos\WK\teste_delphi\views\undFormPedidos.pas=D:\Projetos\WK\teste_delphi\Unit1.pas</Transaction>
+    <Transaction>2024/08/06 14:00:09.000.301,D:\Projetos\WK\teste_delphi\views\undFormPedidos.dfm=D:\Projetos\WK\teste_delphi\Unit1.dfm</Transaction>
+    <Transaction>2024/08/06 14:06:32.000.061,D:\Projetos\WK\teste_delphi\dataaccess\untDataModule.pas=</Transaction>
+    <Transaction>2024/08/06 14:07:16.000.365,=D:\Projetos\WK\teste_delphi\Unit1.pas</Transaction>
+    <Transaction>2024/08/06 14:07:34.000.896,D:\Projetos\WK\teste_delphi\dataaccess\udmDataModule.dfm=D:\Projetos\WK\teste_delphi\Unit1.dfm</Transaction>
+    <Transaction>2024/08/06 14:07:34.000.896,D:\Projetos\WK\teste_delphi\dataaccess\udmDataModule.pas=D:\Projetos\WK\teste_delphi\Unit1.pas</Transaction>
+    <Transaction>2024/08/06 16:44:05.000.448,D:\Projetos\WK\teste_delphi\views\undPedidos.pas=D:\Projetos\WK\teste_delphi\views\undFormPedidos.pas</Transaction>
+    <Transaction>2024/08/06 16:44:05.000.448,D:\Projetos\WK\teste_delphi\views\undPedidos.dfm=D:\Projetos\WK\teste_delphi\views\undFormPedidos.dfm</Transaction>
+    <Transaction>2024/08/06 16:47:20.000.189,D:\Projetos\WK\teste_delphi\dataaccess\udmPrincipal.dfm=D:\Projetos\WK\teste_delphi\dataaccess\udmDataModule.dfm</Transaction>
+    <Transaction>2024/08/06 16:47:20.000.189,D:\Projetos\WK\teste_delphi\dataaccess\udmPrincipal.pas=D:\Projetos\WK\teste_delphi\dataaccess\udmDataModule.pas</Transaction>
+    <Transaction>2024/08/06 16:49:58.000.542,=D:\Projetos\WK\teste_delphi\Unit1.pas</Transaction>
+    <Transaction>2024/08/07 08:56:00.000.436,=D:\Projetos\WK\teste_delphi\Unit1.pas</Transaction>
+    <Transaction>2024/08/07 08:59:42.000.183,D:\Projetos\WK\teste_delphi\Unit1.pas=D:\Projetos\WK\teste_delphi\untUtils.pas</Transaction>
+    <Transaction>2024/09/09 11:43:28.311,=D:\Projetos\WK\pedidos_wk\views\undParametrosDb.pas</Transaction>
+  </Transactions>
+</BorlandProject>
