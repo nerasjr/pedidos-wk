@@ -1,0 +1,6 @@
+# Ignorar histórico de arquivos
+__history/
+dataaccess/__history/
+views/__history/
+models/__history/
+controllers/__history/
