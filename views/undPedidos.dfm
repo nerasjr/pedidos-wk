@@ -26,8 +26,6 @@ object frmPedidos: TfrmPedidos
     Height = 41
     Align = alBottom
     TabOrder = 3
-    ExplicitTop = 520
-    ExplicitWidth = 784
     object btnFechar: TButton
       Left = 11
       Top = 8
@@ -85,7 +83,6 @@ object frmPedidos: TfrmPedidos
     Align = alTop
     Caption = ' Produto: '
     TabOrder = 1
-    ExplicitWidth = 784
     object lblCodigoProduto: TLabel
       Left = 16
       Top = 19
@@ -162,8 +159,6 @@ object frmPedidos: TfrmPedidos
     Height = 41
     Align = alBottom
     TabOrder = 4
-    ExplicitTop = 479
-    ExplicitWidth = 784
     DesignSize = (
       933
       41)
@@ -185,7 +180,6 @@ object frmPedidos: TfrmPedidos
       ReadOnly = True
       TabOrder = 0
       Text = 'edtValorTotal'
-      ExplicitLeft = 656
     end
   end
   object GroupBox1: TGroupBox
@@ -196,7 +190,6 @@ object frmPedidos: TfrmPedidos
     Align = alTop
     Caption = ' Pedidos: '
     TabOrder = 0
-    ExplicitWidth = 784
     object lblCodigoCliente: TLabel
       Left = 16
       Top = 21
@@ -296,8 +289,6 @@ object frmPedidos: TfrmPedidos
     Align = alClient
     TabOrder = 2
     OnKeyDown = grdItensPedidoKeyDown
-    ExplicitWidth = 784
-    ExplicitHeight = 286
     ColWidths = (
       64
       363

@@ -297,27 +297,13 @@ begin
 end;
 
 procedure TfrmPedidos.edtCodigoClienteExit(Sender: TObject);
-var
-  codCliente,
-  nroPedido: Integer;
 begin
   if edtCodigoCliente.Text <> EmptyStr then
   begin
-    codCliente := 0;
-    nroPedido := 0;
-    try
-      codCliente := StrToInt(edtCodigoCliente.Text);
-      nroPedido := FPedidosController.RetornaNumeroPedidoCliente(codCliente);
-    except
-      nroPedido := 0;
-    end;
     btnCancelaPedido.Visible := False;
     btnCarregaPedido.Visible := False;
     btnCancelaEdicao.Visible := True;
-    if nroPedido > 0 then
-      CarregaPedido(nroPedido)
-    else
-      CriarPedido;
+    CriarPedido;
   end;
 end;
 

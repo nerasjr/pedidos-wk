@@ -19,7 +19,6 @@ type
     procedure ExcluirProduto(var APedido: TPedido; const AItemIndex: Integer);
     procedure AlterarProdutoDoPedido(var APedido: TPedido; const AItemIndex: Integer; const AProduto: TPedidoProduto);
     function AlterouProdutoDoPedido(const APedido: TPedido; const AItemIndex: Integer; const AProduto: TPedidoProduto): Boolean;
-    function RetornaNumeroPedidoCliente(ACodigoCliente: Integer): Integer;
     function CarregarPedido(const ACodigoPedido: Integer): TPedido;
     function CancelarPedido(const ACodigoPedido: Integer): Boolean;
   end;
@@ -226,15 +225,6 @@ begin
     FDataModule.DBTransaction.Rollback;
     Result := False;
   end;
-end;
-
-function TPedidosController.RetornaNumeroPedidoCliente(
-  ACodigoCliente: Integer): Integer;
-begin
-  FDataModule.qryExec.SQL.Text := 'SELECT numeropedido FROM Pedidos WHERE codigocliente = :codcliente';
-  FDataModule.qryExec.Params.ParamByName('codcliente').AsInteger := ACodigoCliente;
-  FDataModule.qryExec.Open;
-  Result := FDataModule.qryExec.FieldByName('numeropedido').AsInteger;
 end;
 
 end.

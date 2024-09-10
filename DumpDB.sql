@@ -52,7 +52,7 @@ CREATE TABLE `pedidos` (
   `codigocliente` int(11) DEFAULT NULL,
   `valortotal` decimal(10,2) DEFAULT NULL,
   PRIMARY KEY (`numeropedido`),
-  KEY `idx_codigocliente` (`codigocliente`),
+  KEY `codigocliente` (`codigocliente`),
   CONSTRAINT `pedidos_ibfk_1` FOREIGN KEY (`codigocliente`) REFERENCES `clientes` (`codigo`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -116,7 +116,7 @@ CREATE TABLE `produtos` (
 
 LOCK TABLES `produtos` WRITE;
 /*!40000 ALTER TABLE `produtos` DISABLE KEYS */;
-INSERT INTO `produtos` VALUES (1,'Produto Teste1',121.00),(2,'Produto Teste2',190.00),(3,'Produto Teste3',337.00),(4,'Produto Teste4',30.00),(5,'Produto Teste5',194.00),(6,'Produto Teste6',387.00),(7,'Produto Teste7',375.00),(8,'Produto Teste8',491.00),(9,'Produto Teste9',354.00),(10,'Produto Teste10',461.00),(11,'Produto Teste11',477.00),(12,'Produto Teste12',268.00),(13,'Produto Teste13',98.00),(14,'Produto Teste14',201.00),(15,'Produto Teste15',164.00),(16,'Produto Teste16',258.00),(17,'Produto Teste17',184.00),(18,'Produto Teste18',334.00),(19,'Produto Teste19',398.00),(20,'Produto Teste20',76.00);
+INSERT INTO `produtos` VALUES (1,'Produto Teste1',293.00),(2,'Produto Teste2',427.00),(3,'Produto Teste3',455.00),(4,'Produto Teste4',471.00),(5,'Produto Teste5',341.00),(6,'Produto Teste6',282.00),(7,'Produto Teste7',60.00),(8,'Produto Teste8',148.00),(9,'Produto Teste9',46.00),(10,'Produto Teste10',70.00),(11,'Produto Teste11',146.00),(12,'Produto Teste12',139.00),(13,'Produto Teste13',298.00),(14,'Produto Teste14',80.00),(15,'Produto Teste15',404.00),(16,'Produto Teste16',308.00),(17,'Produto Teste17',470.00),(18,'Produto Teste18',291.00),(19,'Produto Teste19',401.00),(20,'Produto Teste20',198.00);
 /*!40000 ALTER TABLE `produtos` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -133,4 +133,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-09-09 13:09:30
+-- Dump completed on 2024-09-10  8:42:34

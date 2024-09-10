@@ -147,8 +147,7 @@ begin
                           '    dataemissao DATE, ' +
                           '    codigocliente INT, ' +
                           '    valortotal DECIMAL(10, 2), ' +
-                          '    FOREIGN KEY (codigocliente) REFERENCES clientes(codigo), ' +
-                          '    INDEX idx_codigocliente (codigocliente) ' +
+                          '    FOREIGN KEY (codigocliente) REFERENCES clientes(codigo) ' +
                           ');';
       qryExec.ExecSQL;
     end;
