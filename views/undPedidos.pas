@@ -213,14 +213,6 @@ procedure TfrmPedidos.CarregaCliente;
 begin
   if edtCodigoCliente.Text = EmptyStr then
     edtCodigoCliente.Text := IntToStr(FPedido.Cliente.Codigo);
-
-  edtNroPedido.Clear;
-  lblNroPedido.Visible := FPedido.NumeroPedido > 0;
-  edtNroPedido.Visible := lblNroPedido.Visible;
-
-  if FPedido.NumeroPedido > 0 then
-    edtNroPedido.Text := IntToStr(FPedido.NumeroPedido);
-
   edtNomeCliente.Text := FPedido.Cliente.Nome;
   edtCidadeCliente.Text := FPedido.Cliente.Cidade;
   edtUfCliente.Text := FPedido.Cliente.Uf;
@@ -249,6 +241,10 @@ begin
     FPedido := FPedidosController.CarregarPedido(ANroPedido);
     if FPedido <> nil then
     begin
+      edtNroPedido.Clear;
+      lblNroPedido.Visible := True;
+      edtNroPedido.Visible := True;
+      edtNroPedido.Text := IntToStr(FPedido.NumeroPedido);
       CarregaCliente;
       AtualizarGrid;
       AtualizarValorTotal;
@@ -278,7 +274,7 @@ procedure TfrmPedidos.CriarPedido;
 begin
   if edtCodigoCliente.Text = EmptyStr then
     NovoPedido
-  else
+  else if (not edtNroPedido.Visible) then
   begin
     try
       FPedido := FPedidosController.CriarPedido(StrToInt(edtCodigoCliente.Text));
@@ -298,13 +294,13 @@ end;
 
 procedure TfrmPedidos.edtCodigoClienteExit(Sender: TObject);
 begin
-  if edtCodigoCliente.Text <> EmptyStr then
+  if (edtCodigoCliente.Text <> EmptyStr) then
   begin
     btnCancelaPedido.Visible := False;
     btnCarregaPedido.Visible := False;
-    btnCancelaEdicao.Visible := True;
     CriarPedido;
   end;
+  btnCancelaEdicao.Visible := not btnCarregaPedido.Visible;
 end;
 
 procedure TfrmPedidos.edtCodigoClienteKeyDown(Sender: TObject; var Key: Word;
@@ -489,6 +485,9 @@ begin
   btnCarregaPedido.Visible := True;
   btnCancelaEdicao.Visible := False;
   edtValorTotal.Text := '0.00';
+  lblNroPedido.Visible := False;
+  edtNroPedido.Clear;
+  edtNroPedido.Visible := False;
 end;
 
 function TfrmPedidos.VerificaProduto(ASetValor: Boolean): Boolean;

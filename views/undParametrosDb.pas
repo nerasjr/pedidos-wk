@@ -25,6 +25,7 @@ type
     btnGravar: TButton;
     btnFechar: TButton;
     lblFileIniName: TLabel;
+    memAvisos: TMemo;
     procedure btnFecharClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure FormCreate(Sender: TObject);
@@ -51,13 +52,14 @@ end;
 
 procedure TfrmParametrosDb.btnGravarClick(Sender: TObject);
 begin
+  memAvisos.Lines.Add('Atribuindo parâmetros de conexão ...');
   dtmPrincipal.DataBaseName := edtDatabase.Text;
   dtmPrincipal.UserNameDB := edtUsername.Text;
   dtmPrincipal.ServerDB := edtServer.Text;
   dtmPrincipal.PortDB := StrToInt(edtPort.Text);
   dtmPrincipal.PwsDB := edtPassword.Text;
   dtmPrincipal.LibPath := edtLibpath.Text;
-
+  memAvisos.Lines.Add('Gerando arquivo .ini ...');
   DeleteFile(GetFileIniName());
   IniFileCreate(dtmPrincipal.DataBaseName,
                 dtmPrincipal.UserNameDB,
@@ -65,14 +67,15 @@ begin
                 dtmPrincipal.PortDB,
                 dtmPrincipal.PwsDB,
                 dtmPrincipal.LibPath);
+  memAvisos.Lines.Add('Criando o banco e tabelas ...');
   dtmPrincipal.VerficaBancoETabelas;
   if dtmPrincipal.FDConnection.Connected then
   begin
-    ShowMessage('Banco e tabelas criados!');
+    memAvisos.Lines.Add('Banco e tabelas criados!');
     Close;
   end
   else
-    ShowMessage('Erro ao criar banco, verifique os parêtros informados!');
+    memAvisos.Lines.Add('Erro ao criar Banco e/ou tabelas');
 end;
 
 procedure TfrmParametrosDb.FormClose(Sender: TObject; var Action: TCloseAction);
@@ -84,6 +87,7 @@ end;
 
 procedure TfrmParametrosDb.FormCreate(Sender: TObject);
 begin
+  memAvisos.Text := EmptyStr;
   lblFileIniName.Caption := 'Arquivo .ini: ' + GetFileIniName;
   edtDatabase.Text := dtmPrincipal.DataBaseName;
   edtUsername.Text := dtmPrincipal.UserNameDB;

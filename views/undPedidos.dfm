@@ -27,49 +27,49 @@ object frmPedidos: TfrmPedidos
     Align = alBottom
     TabOrder = 3
     object btnFechar: TButton
-      Left = 11
+      Left = 3
       Top = 8
-      Width = 130
+      Width = 115
       Height = 25
       Action = actClose
       TabOrder = 0
     end
     object btnGravarPedido: TButton
-      Left = 785
+      Left = 592
       Top = 8
-      Width = 130
+      Width = 115
       Height = 25
       Action = actGravar
       TabOrder = 5
     end
     object btnGravaProduto: TButton
-      Left = 630
+      Left = 474
       Top = 8
-      Width = 130
+      Width = 115
       Height = 25
       Action = actGravaProduto
       TabOrder = 4
     end
     object btnCarregaPedido: TButton
-      Left = 320
+      Left = 238
       Top = 8
-      Width = 130
+      Width = 115
       Height = 25
       Action = actCarregaPedido
       TabOrder = 2
     end
     object btnCancelaPedido: TButton
-      Left = 475
+      Left = 356
       Top = 8
-      Width = 130
+      Width = 115
       Height = 25
       Action = actCancelaPedido
       TabOrder = 3
     end
     object btnCancelaEdicao: TButton
-      Left = 165
+      Left = 120
       Top = 8
-      Width = 130
+      Width = 115
       Height = 25
       Action = actCancelarEdicao
       TabOrder = 1

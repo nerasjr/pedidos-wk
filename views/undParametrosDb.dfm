@@ -106,9 +106,6 @@ object frmParametrosDb: TfrmParametrosDb
     Align = alTop
     Caption = 'Informe os par'#226'metros de conex'#227'o com o banco de dados.'
     TabOrder = 5
-    ExplicitLeft = 208
-    ExplicitTop = 48
-    ExplicitWidth = 185
   end
   object edtLibpath: TEdit
     Left = 208
@@ -125,9 +122,6 @@ object frmParametrosDb: TfrmParametrosDb
     Height = 41
     Align = alBottom
     TabOrder = 7
-    ExplicitLeft = 216
-    ExplicitTop = 336
-    ExplicitWidth = 185
     DesignSize = (
       624
       41)
@@ -158,5 +152,15 @@ object frmParametrosDb: TfrmParametrosDb
       TabOrder = 1
       OnClick = btnFecharClick
     end
+  end
+  object memAvisos: TMemo
+    Left = 0
+    Top = 288
+    Width = 624
+    Height = 112
+    Align = alBottom
+    Lines.Strings = (
+      'memAvisos')
+    TabOrder = 8
   end
 end
